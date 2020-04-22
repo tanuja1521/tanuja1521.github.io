@@ -16,12 +16,13 @@
     <div class="parallax">
       <header>
             <nav class="navbar navbar-expand-lg justify-content-end fixed-top">
-
+  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
+      <a class="navbar-brand" href="#"><img src="logo.png" width="9%"></a>
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
@@ -50,6 +51,8 @@
     <div>Keep scrolling to know a little about me!</div>
   </div>
 </div>
+  <!---<a href="#about" class="scroll-down" address="true">Scroll down</a> -->
+   <a href="#about" id="scroll"><span></span></a>
     </div>
     <section id="about">
       <h5 class="tag">ABOUT</h5>
@@ -57,21 +60,17 @@
       <div class="container my-2">
         <div class="row">
         <div class="col-sm-4 col-md-4 col-lg-4 content">
-          <img src="tanuja.png" width="100%">
+          <img src="avatar.png" alt="Avatar" class="avatar">
         </div>
         <div class="col-sm-8 col-md-8 col-lg-8 content">
-        <p>I'm Tanuja, an undergraduate student of class 2022 in the Department of Electrical and Electronics Engineering at NIT Warangal.
+        p>I'm Tanuja, an undergraduate student of class 2022 in the Department of Electrical and Electronics Engineering at NIT Warangal.
 I am broadly interested in research in various applications of deep learning, particularly Computer Vision.
 I like working on challenging and practical problems, rather than just learning in theory. In my free time, I usually work on mini projects of my own or just binge watch on netflix like every other college student. I feel that coding helps me to express myself. It is my outlet into the creative world and possibly a path to create a mark upon it.</p>
 <p>
-Beyond the technical realm, I am also an avid reader with a strong penchant for creative works
-
-  
-  
-  
-. I am always looking for new interesting texts to dive into, as the world around me reshapes with every page read. I might spend hours discovering music new to my ears, and will occasionally try my hand at new flavors in the kitchen.</p>
+Beyond the technical realm, I am also an avid reader with a strong penchant for creative works. I am always looking for new interesting texts to dive into, as the world around me reshapes with every page read. I might spend hours discovering music new to my ears, and will occasionally try my hand at new flavors in the kitchen.</p>
 
 <p>No, I am not a novelist, and I am no painter or especially good cook either. But I believe we have the power to grow, learn, adapt, improve, as our world shifts from one moment to the next.</p>
+ 
       </div>
 </div>
 </div>
@@ -87,8 +86,33 @@ Beyond the technical realm, I am also an avid reader with a strong penchant for 
     <p class="tagline mx-2">Bachelor of Technology in Electrical and Electronics Engineering.</p>
     <div class="details mx-2">Current CGPA - 9.05/10.00</div> 
     <ul class="mx-2"><li>Focus on fundamental courses in CS such as Algorithms, Data Structures,Problem Solving with C++ and few advanced courses like Deep Learning, Machine Learning and Image Processing.</li>
+<li>Machine Learning researcher at <a href="https://www.nevronas.in/"> Nevronas</a>, a student led group of enthusiastic people at Innovation Garage,NITW.</li>
 <li>Executive member of Electrical Engineering Assosciation, NITW.</li>
 <li>Awarded Institute Merit Scholarship for B.Tech First Year 2018-19.</li></ul>
+  </div>
+</div>
+  </div>
+  <div class="page-title my-3">TECHNICAL SKILLS</div>
+        <div class="container my-3">
+        <div class="card my-2">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-sm-4 col-md-4 col-lg-4">
+        <h5 class="title mx-2">Relevant Coursework</h5>
+        <ul class="mx-2 my-2"><li>Data Structure and Algorithms</li><li>Problem Solving with C++</li></ul>
+
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4">
+        <h5 class="title mx-2">Skills</h5>
+        <ul class="mx-2 my-2"><li>HTML & CSS</li><li>Javascript</li></ul>
+
+      </div>
+      <div class="col-sm-4 col-md-4 col-lg-4">
+        <h5 class="title mx-2">Areas of Interest</h5>
+        <ul class="mx-2 my-2"><li>Deep Learning</li><li>Natural Language Processing</li><li>Django</li></ul>
+
+      </div>
+    </div>
   </div>
 </div>
   </div>
@@ -96,18 +120,106 @@ Beyond the technical realm, I am also an avid reader with a strong penchant for 
       <div id="projects">
         <h5 class="tag">CHECK OUT</h5>
       <div class="page-title">MY PROJECTS</div>
-      <div class="container my-3">
+      <div class="container">
         <div class="content">
-          <h5 class="tag">Here are some of the projects I am working on.</h5>
-          <p></p>
+          <p class="tag" style="color: cyan">Here are some of the projects I am working on</p>
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6 Image">
+              
+              <div data-toggle="modal" data-target="#dp"><img src="dp.jpg"></div>
+              <div id="dp" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <div class="modal-header">
+        
+        <h4 class="modal-title">DANCE POINT RECOGNITION</h4>
+      </div>
+      <div class="modal-body">
+        <p>The core idea of the project is based on pose estimation using Posenet repository. The program shows a sample dance video to a user, and asks to copy the performance. The backend deep learning algorithm is coded to compute the variation in the two poses, and normalize the deviations calculated into a percentage score. </p>
+      </div>
+      <h6 class="mx-2">Technology Used: TensorFlow,OpenCV,PoseNet</h6>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark">See More</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 Image">
+              <div data-toggle="modal" data-target="#wg"><img src="wg.jpg"></div>
+              <div id="wg" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <div class="modal-header">
+        
+        <h4 class="modal-title">WEB GAMES</h4>
+      </div>
+      <div class="modal-body">
+        <p></p>
+      </div>
+      <h6 class="mx-2">Technology Used: HTML,CSS,JQuery,Javascript</h6>
+      <div class="modal-footer">
+        <a href="https://github.com/tanuja1521/web-games"><button type="button" class="btn btn-dark">See More</button></a>
+      </div>
+    </div>
+
+  </div>
+</div>
+              <div data-toggle="modal" data-target="#bl"><img src="bl.jpg"></div>
+              <div id="bl" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <div class="modal-header">
+        
+        <h4 class="modal-title">BIONIC LEG</h4>
+      </div>
+      <div class="modal-body">
+        <p>Developed a bionic leg which is an exoskeleton type device for physically impaired people to showcase at the INK Makers Makeathon-2018 at NIT Warangal. It can be improved by using EEG sensors, so that using brain waves frequency of walking 15-40 Hz as signals it can operate automatically. </p>
+      </div>
+      <h6 class="mx-2">Technology Used: Arduino UNO, servo motors</h6>
+      <div class="modal-footer">
+        <a href="https://igconnect.in/projects/show/Bionic%20Leg/"><button type="button" class="btn btn-dark">See More</button></a>
+      </div>
+    </div>
+
+  </div>
+</div>
+              
+            </div>
+
+          </div>
         </div>
     </div>>
     </div>
+    <footer class="page-footer">
+    <div class="footer-socialmedia text-center">
+      <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+      <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+      <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+    </div>
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright: Designed By
+    <a href="#"> Tanuja</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="javascript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="javascript.js"></script>
   </body>
 </html>

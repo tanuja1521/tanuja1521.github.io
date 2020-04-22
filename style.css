@@ -1,8 +1,13 @@
 body, html {
   height: 100%;
+  scroll-behavior: smooth;
+
+}
+.navbar{
+  padding: 1px 17px;
 }
 .nav-item{
-  padding: 5px 25px;
+  padding: 1px 25px;
 }
 .nav-link{
   text-decoration: none;
@@ -21,7 +26,7 @@ body, html {
 }
 .parallax {
   /* The image used */
-  background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
     url('https://miro.medium.com/max/4000/1*Qmg1DcvQhMR4EvpwR7uSqg.jpeg');
   /*background-image: url('https://miro.medium.com/max/4000/1*Qmg1DcvQhMR4EvpwR7uSqg.jpeg');
 
@@ -145,12 +150,123 @@ body, html {
 
 }
 #education{
+  background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)),
+  url(https://media.istockphoto.com/videos/wiggle-school-pattern-education-supplies-on-white-background-video-id1164972660?s=640x640);
   padding-bottom: 5%;
 }
 .year{
   color: grey;
 }
 #projects{
-  background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
-  url(https://wallup.net/wp-content/uploads/2016/01/226635-mathematics-equations-science-3D-748x468.jpg);
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+  url(https://c4.wallpaperflare.com/wallpaper/890/539/769/mathematics-equations-science-3d-wallpaper-preview.jpg);
+}
+#scroll span {
+  position: absolute;
+  bottom : 10%;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid grey;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+#scroll span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.avatar {
+  margin-top : 2em; 
+  width: 12em;
+  height: 12em;
+  border-radius: 50%;
+}
+.row{
+  padding-bottom: 1.5rem;
+}
+.Image img{
+  width: 100%;
+  padding: 0.4rem 0;
+  opacity: 1;
+  display: block;
+  height: auto;
+}
+
+.model{
+  align-self: center;
+}
+.modal-content{
+  background: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)),
+  url(https://media.istockphoto.com/vectors/vector-seamless-pattern-of-electrical-engineering-household-and-in-vector-id695858886);
+  background-size: cover;
+}
+.close{
+  text-align: right;
+  margin: 0 0.7rem;
+  font-size: 3rem;
+}
+.modal-title{
+  color: #016691;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  letter-spacing: .3rem;
+  text-align: center;
+  position: relative;
+}
+.page-footer{
+  background-color:  rgb(25, 39, 52);
+}
+.footer-copyright{
+  background-color: rgb(21, 32, 43);
+  color: rgb(71, 123, 164);
+}
+.footer-socialmedia i{
+  padding: 1.5rem;
+  color: rgb(71, 123, 164);
+}
+.footer-socialmedia i:hover{
+  color: white;
 }
